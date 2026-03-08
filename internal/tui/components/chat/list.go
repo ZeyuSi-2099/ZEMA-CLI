@@ -10,14 +10,14 @@ import (
 	"github.com/charmbracelet/bubbles/viewport"
 	tea "github.com/charmbracelet/bubbletea"
 	"github.com/charmbracelet/lipgloss"
-	"github.com/opencode-ai/opencode/internal/app"
-	"github.com/opencode-ai/opencode/internal/message"
-	"github.com/opencode-ai/opencode/internal/pubsub"
-	"github.com/opencode-ai/opencode/internal/session"
-	"github.com/opencode-ai/opencode/internal/tui/components/dialog"
-	"github.com/opencode-ai/opencode/internal/tui/styles"
-	"github.com/opencode-ai/opencode/internal/tui/theme"
-	"github.com/opencode-ai/opencode/internal/tui/util"
+	"github.com/ZeyuSi-2099/zema-cli/internal/app"
+	"github.com/ZeyuSi-2099/zema-cli/internal/message"
+	"github.com/ZeyuSi-2099/zema-cli/internal/pubsub"
+	"github.com/ZeyuSi-2099/zema-cli/internal/session"
+	"github.com/ZeyuSi-2099/zema-cli/internal/tui/components/dialog"
+	"github.com/ZeyuSi-2099/zema-cli/internal/tui/styles"
+	"github.com/ZeyuSi-2099/zema-cli/internal/tui/theme"
+	"github.com/ZeyuSi-2099/zema-cli/internal/tui/util"
 )
 
 type cacheItem struct {

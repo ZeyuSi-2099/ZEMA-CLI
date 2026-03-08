@@ -10,9 +10,9 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/opencode-ai/opencode/internal/config"
-	"github.com/opencode-ai/opencode/internal/fileutil"
-	"github.com/opencode-ai/opencode/internal/logging"
+	"github.com/ZeyuSi-2099/zema-cli/internal/config"
+	"github.com/ZeyuSi-2099/zema-cli/internal/fileutil"
+	"github.com/ZeyuSi-2099/zema-cli/internal/logging"
 )
 
 const (

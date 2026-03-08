@@ -10,14 +10,14 @@ import (
 
 	"github.com/charmbracelet/lipgloss"
 	"github.com/charmbracelet/x/ansi"
-	"github.com/opencode-ai/opencode/internal/config"
-	"github.com/opencode-ai/opencode/internal/diff"
-	"github.com/opencode-ai/opencode/internal/llm/agent"
-	"github.com/opencode-ai/opencode/internal/llm/models"
-	"github.com/opencode-ai/opencode/internal/llm/tools"
-	"github.com/opencode-ai/opencode/internal/message"
-	"github.com/opencode-ai/opencode/internal/tui/styles"
-	"github.com/opencode-ai/opencode/internal/tui/theme"
+	"github.com/ZeyuSi-2099/zema-cli/internal/config"
+	"github.com/ZeyuSi-2099/zema-cli/internal/diff"
+	"github.com/ZeyuSi-2099/zema-cli/internal/llm/agent"
+	"github.com/ZeyuSi-2099/zema-cli/internal/llm/models"
+	"github.com/ZeyuSi-2099/zema-cli/internal/llm/tools"
+	"github.com/ZeyuSi-2099/zema-cli/internal/message"
+	"github.com/ZeyuSi-2099/zema-cli/internal/tui/styles"
+	"github.com/ZeyuSi-2099/zema-cli/internal/tui/theme"
 )
 
 type uiMessageType int

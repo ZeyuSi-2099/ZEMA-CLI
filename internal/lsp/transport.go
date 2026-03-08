@@ -8,8 +8,8 @@ import (
 	"io"
 	"strings"
 
-	"github.com/opencode-ai/opencode/internal/config"
-	"github.com/opencode-ai/opencode/internal/logging"
+	"github.com/ZeyuSi-2099/zema-cli/internal/config"
+	"github.com/ZeyuSi-2099/zema-cli/internal/logging"
 )
 
 // Write writes an LSP message to the given writer

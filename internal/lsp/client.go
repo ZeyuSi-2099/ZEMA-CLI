@@ -14,9 +14,9 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/opencode-ai/opencode/internal/config"
-	"github.com/opencode-ai/opencode/internal/logging"
-	"github.com/opencode-ai/opencode/internal/lsp/protocol"
+	"github.com/ZeyuSi-2099/zema-cli/internal/config"
+	"github.com/ZeyuSi-2099/zema-cli/internal/logging"
+	"github.com/ZeyuSi-2099/zema-cli/internal/lsp/protocol"
 )
 
 type Client struct {

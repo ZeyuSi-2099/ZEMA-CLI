@@ -8,12 +8,12 @@ import (
 	"github.com/charmbracelet/bubbles/key"
 	tea "github.com/charmbracelet/bubbletea"
 	"github.com/charmbracelet/lipgloss"
-	"github.com/opencode-ai/opencode/internal/config"
-	"github.com/opencode-ai/opencode/internal/llm/models"
-	"github.com/opencode-ai/opencode/internal/tui/layout"
-	"github.com/opencode-ai/opencode/internal/tui/styles"
-	"github.com/opencode-ai/opencode/internal/tui/theme"
-	"github.com/opencode-ai/opencode/internal/tui/util"
+	"github.com/ZeyuSi-2099/zema-cli/internal/config"
+	"github.com/ZeyuSi-2099/zema-cli/internal/llm/models"
+	"github.com/ZeyuSi-2099/zema-cli/internal/tui/layout"
+	"github.com/ZeyuSi-2099/zema-cli/internal/tui/styles"
+	"github.com/ZeyuSi-2099/zema-cli/internal/tui/theme"
+	"github.com/ZeyuSi-2099/zema-cli/internal/tui/util"
 )
 
 const (

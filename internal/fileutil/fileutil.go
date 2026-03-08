@@ -11,7 +11,7 @@ import (
 	"time"
 
 	"github.com/bmatcuk/doublestar/v4"
-	"github.com/opencode-ai/opencode/internal/logging"
+	"github.com/ZeyuSi-2099/zema-cli/internal/logging"
 )
 
 var (
@@ -81,7 +81,7 @@ func SkipHidden(path string) bool {
 	}
 
 	commonIgnoredDirs := map[string]bool{
-		".opencode":        true,
+		".zema":        true,
 		"node_modules":     true,
 		"vendor":           true,
 		"dist":             true,

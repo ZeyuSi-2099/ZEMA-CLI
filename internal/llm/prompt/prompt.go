@@ -7,9 +7,9 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/opencode-ai/opencode/internal/config"
-	"github.com/opencode-ai/opencode/internal/llm/models"
-	"github.com/opencode-ai/opencode/internal/logging"
+	"github.com/ZeyuSi-2099/zema-cli/internal/config"
+	"github.com/ZeyuSi-2099/zema-cli/internal/llm/models"
+	"github.com/ZeyuSi-2099/zema-cli/internal/logging"
 )
 
 func GetAgentPrompt(agentName config.AgentName, provider models.ModelProvider) string {

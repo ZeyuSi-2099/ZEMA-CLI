@@ -6,7 +6,7 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/opencode-ai/opencode/internal/config"
+	"github.com/ZeyuSi-2099/zema-cli/internal/config"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )

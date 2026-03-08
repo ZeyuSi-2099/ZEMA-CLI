@@ -3,15 +3,15 @@ package prompt
 import (
 	"fmt"
 
-	"github.com/opencode-ai/opencode/internal/llm/models"
+	"github.com/ZeyuSi-2099/zema-cli/internal/llm/models"
 )
 
 func TaskPrompt(_ models.ModelProvider) string {
-	agentPrompt := `You are an agent for OpenCode. Given the user's prompt, you should use the tools available to you to answer the user's question.
-Notes:
-1. IMPORTANT: You should be concise, direct, and to the point, since your responses will be displayed on a command line interface. Answer the user's question directly, without elaboration, explanation, or details. One word answers are best. Avoid introductions, conclusions, and explanations. You MUST avoid text before/after your response, such as "The answer is <answer>.", "Here is the content of the file..." or "Based on the information provided, the answer is..." or "Here is what I will do next...".
-2. When relevant, share file names and code snippets relevant to the query
-3. Any file paths you return in your final response MUST be absolute. DO NOT use relative paths.`
+	agentPrompt := `你是 ZEMA 的任务执行 Agent。根据用户的提示，使用可用的工具来完成任务。
+注意：
+1. 简洁直接，用中文回答。输出显示在命令行中。
+2. 分享相关的文件名和代码片段
+3. 返回的文件路径必须是绝对路径`
 
 	return fmt.Sprintf("%s\n%s\n", agentPrompt, getEnvironmentInfo())
 }

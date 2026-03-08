@@ -8,16 +8,16 @@ import (
 	"sync"
 	"time"
 
-	"github.com/opencode-ai/opencode/internal/config"
-	"github.com/opencode-ai/opencode/internal/llm/models"
-	"github.com/opencode-ai/opencode/internal/llm/prompt"
-	"github.com/opencode-ai/opencode/internal/llm/provider"
-	"github.com/opencode-ai/opencode/internal/llm/tools"
-	"github.com/opencode-ai/opencode/internal/logging"
-	"github.com/opencode-ai/opencode/internal/message"
-	"github.com/opencode-ai/opencode/internal/permission"
-	"github.com/opencode-ai/opencode/internal/pubsub"
-	"github.com/opencode-ai/opencode/internal/session"
+	"github.com/ZeyuSi-2099/zema-cli/internal/config"
+	"github.com/ZeyuSi-2099/zema-cli/internal/llm/models"
+	"github.com/ZeyuSi-2099/zema-cli/internal/llm/prompt"
+	"github.com/ZeyuSi-2099/zema-cli/internal/llm/provider"
+	"github.com/ZeyuSi-2099/zema-cli/internal/llm/tools"
+	"github.com/ZeyuSi-2099/zema-cli/internal/logging"
+	"github.com/ZeyuSi-2099/zema-cli/internal/message"
+	"github.com/ZeyuSi-2099/zema-cli/internal/permission"
+	"github.com/ZeyuSi-2099/zema-cli/internal/pubsub"
+	"github.com/ZeyuSi-2099/zema-cli/internal/session"
 )
 
 // Common errors

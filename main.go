@@ -1,8 +1,8 @@
 package main
 
 import (
-	"github.com/opencode-ai/opencode/cmd"
-	"github.com/opencode-ai/opencode/internal/logging"
+	"github.com/ZeyuSi-2099/zema-cli/cmd"
+	"github.com/ZeyuSi-2099/zema-cli/internal/logging"
 )
 
 func main() {

@@ -8,7 +8,7 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/opencode-ai/opencode/internal/config"
+	"github.com/ZeyuSi-2099/zema-cli/internal/config"
 )
 
 type LSParams struct {

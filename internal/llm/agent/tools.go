@@ -3,12 +3,12 @@ package agent
 import (
 	"context"
 
-	"github.com/opencode-ai/opencode/internal/history"
-	"github.com/opencode-ai/opencode/internal/llm/tools"
-	"github.com/opencode-ai/opencode/internal/lsp"
-	"github.com/opencode-ai/opencode/internal/message"
-	"github.com/opencode-ai/opencode/internal/permission"
-	"github.com/opencode-ai/opencode/internal/session"
+	"github.com/ZeyuSi-2099/zema-cli/internal/history"
+	"github.com/ZeyuSi-2099/zema-cli/internal/llm/tools"
+	"github.com/ZeyuSi-2099/zema-cli/internal/lsp"
+	"github.com/ZeyuSi-2099/zema-cli/internal/message"
+	"github.com/ZeyuSi-2099/zema-cli/internal/permission"
+	"github.com/ZeyuSi-2099/zema-cli/internal/session"
 )
 
 func CoderAgentTools(

@@ -9,42 +9,42 @@ import (
 
 	tea "github.com/charmbracelet/bubbletea"
 	zone "github.com/lrstanley/bubblezone"
-	"github.com/opencode-ai/opencode/internal/app"
-	"github.com/opencode-ai/opencode/internal/config"
-	"github.com/opencode-ai/opencode/internal/db"
-	"github.com/opencode-ai/opencode/internal/format"
-	"github.com/opencode-ai/opencode/internal/llm/agent"
-	"github.com/opencode-ai/opencode/internal/logging"
-	"github.com/opencode-ai/opencode/internal/pubsub"
-	"github.com/opencode-ai/opencode/internal/tui"
-	"github.com/opencode-ai/opencode/internal/version"
+	"github.com/ZeyuSi-2099/zema-cli/internal/app"
+	"github.com/ZeyuSi-2099/zema-cli/internal/config"
+	"github.com/ZeyuSi-2099/zema-cli/internal/db"
+	"github.com/ZeyuSi-2099/zema-cli/internal/format"
+	"github.com/ZeyuSi-2099/zema-cli/internal/llm/agent"
+	"github.com/ZeyuSi-2099/zema-cli/internal/logging"
+	"github.com/ZeyuSi-2099/zema-cli/internal/pubsub"
+	"github.com/ZeyuSi-2099/zema-cli/internal/tui"
+	"github.com/ZeyuSi-2099/zema-cli/internal/version"
 	"github.com/spf13/cobra"
 )
 
 var rootCmd = &cobra.Command{
-	Use:   "opencode",
-	Short: "Terminal-based AI assistant for software development",
-	Long: `OpenCode is a powerful terminal-based AI assistant that helps with software development tasks.
-It provides an interactive chat interface with AI capabilities, code analysis, and LSP integration
-to assist developers in writing, debugging, and understanding code directly from the terminal.`,
+	Use:   "zema",
+	Short: "AI 智能体协作工具，面向定性研究与咨询项目交付",
+	Long: `ZEMA 是面向研究/咨询团队的 AI 智能体协作终端工具。
+提供定性研究全流程支持：文献综述、访谈设计、笔录处理、编码分析、主题提炼、报告撰写、质量审核。
+内置 8 个专岗 Agent，覆盖定性研究从设计到交付的完整链路。`,
 	Example: `
-  # Run in interactive mode
-  opencode
+  # 交互模式
+  zema
 
-  # Run with debug logging
-  opencode -d
+  # 调试模式
+  zema -d
 
-  # Run with debug logging in a specific directory
-  opencode -d -c /path/to/project
+  # 指定工作目录
+  zema -d -c /path/to/project
 
-  # Print version
-  opencode -v
+  # 查看版本
+  zema -v
 
-  # Run a single non-interactive prompt
-  opencode -p "Explain the use of context in Go"
+  # 非交互模式
+  zema -p "帮我设计一份半结构化访谈提纲"
 
-  # Run a single non-interactive prompt with JSON output format
-  opencode -p "Explain the use of context in Go" -f json
+  # JSON 格式输出
+  zema -p "分析这份访谈笔录的关键主题" -f json
   `,
 	RunE: func(cmd *cobra.Command, args []string) error {
 		// If the help flag is set, show the help message

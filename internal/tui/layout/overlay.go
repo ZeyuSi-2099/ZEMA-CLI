@@ -8,9 +8,9 @@ import (
 	"github.com/muesli/ansi"
 	"github.com/muesli/reflow/truncate"
 	"github.com/muesli/termenv"
-	"github.com/opencode-ai/opencode/internal/tui/styles"
-	"github.com/opencode-ai/opencode/internal/tui/theme"
-	"github.com/opencode-ai/opencode/internal/tui/util"
+	"github.com/ZeyuSi-2099/zema-cli/internal/tui/styles"
+	"github.com/ZeyuSi-2099/zema-cli/internal/tui/theme"
+	"github.com/ZeyuSi-2099/zema-cli/internal/tui/util"
 )
 
 // Most of this code is borrowed from

@@ -13,11 +13,11 @@ import (
 	"github.com/openai/openai-go"
 	"github.com/openai/openai-go/option"
 	"github.com/openai/openai-go/shared"
-	"github.com/opencode-ai/opencode/internal/config"
-	"github.com/opencode-ai/opencode/internal/llm/models"
-	toolsPkg "github.com/opencode-ai/opencode/internal/llm/tools"
-	"github.com/opencode-ai/opencode/internal/logging"
-	"github.com/opencode-ai/opencode/internal/message"
+	"github.com/ZeyuSi-2099/zema-cli/internal/config"
+	"github.com/ZeyuSi-2099/zema-cli/internal/llm/models"
+	toolsPkg "github.com/ZeyuSi-2099/zema-cli/internal/llm/tools"
+	"github.com/ZeyuSi-2099/zema-cli/internal/logging"
+	"github.com/ZeyuSi-2099/zema-cli/internal/message"
 )
 
 type copilotOptions struct {
@@ -62,7 +62,7 @@ func (c *copilotClient) exchangeGitHubToken(githubToken string) (string, error) 
 	}
 
 	req.Header.Set("Authorization", "Token "+githubToken)
-	req.Header.Set("User-Agent", "OpenCode/1.0")
+	req.Header.Set("User-Agent", "ZEMA/1.0")
 
 	resp, err := c.httpClient.Do(req)
 	if err != nil {
@@ -124,7 +124,7 @@ func newCopilotClient(opts providerClientOptions) CopilotClient {
 		}
 
 		if githubToken == "" {
-			logging.Error("GitHub token is required for Copilot provider. Set GITHUB_TOKEN environment variable, configure it in opencode.json, or ensure GitHub CLI/Copilot is properly authenticated.")
+			logging.Error("GitHub token is required for Copilot provider. Set GITHUB_TOKEN environment variable, configure it in zema.json, or ensure GitHub CLI/Copilot is properly authenticated.")
 			return &copilotClient{
 				providerOptions: opts,
 				options:         copilotOpts,
@@ -164,8 +164,8 @@ func newCopilotClient(opts providerClientOptions) CopilotClient {
 
 	// Add GitHub Copilot specific headers
 	openaiClientOptions = append(openaiClientOptions,
-		option.WithHeader("Editor-Version", "OpenCode/1.0"),
-		option.WithHeader("Editor-Plugin-Version", "OpenCode/1.0"),
+		option.WithHeader("Editor-Version", "ZEMA/1.0"),
+		option.WithHeader("Editor-Plugin-Version", "ZEMA/1.0"),
 		option.WithHeader("Copilot-Integration-Id", "vscode-chat"),
 	)
 

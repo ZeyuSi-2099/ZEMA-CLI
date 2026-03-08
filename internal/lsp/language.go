@@ -4,7 +4,7 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/opencode-ai/opencode/internal/lsp/protocol"
+	"github.com/ZeyuSi-2099/zema-cli/internal/lsp/protocol"
 )
 
 func DetectLanguageID(uri string) protocol.LanguageKind {

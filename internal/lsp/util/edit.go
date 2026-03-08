@@ -7,7 +7,7 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/opencode-ai/opencode/internal/lsp/protocol"
+	"github.com/ZeyuSi-2099/zema-cli/internal/lsp/protocol"
 )
 
 func applyTextEdits(uri protocol.DocumentUri, edits []protocol.TextEdit) error {

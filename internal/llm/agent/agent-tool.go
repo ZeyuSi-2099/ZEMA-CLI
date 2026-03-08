@@ -5,11 +5,11 @@ import (
 	"encoding/json"
 	"fmt"
 
-	"github.com/opencode-ai/opencode/internal/config"
-	"github.com/opencode-ai/opencode/internal/llm/tools"
-	"github.com/opencode-ai/opencode/internal/lsp"
-	"github.com/opencode-ai/opencode/internal/message"
-	"github.com/opencode-ai/opencode/internal/session"
+	"github.com/ZeyuSi-2099/zema-cli/internal/config"
+	"github.com/ZeyuSi-2099/zema-cli/internal/llm/tools"
+	"github.com/ZeyuSi-2099/zema-cli/internal/lsp"
+	"github.com/ZeyuSi-2099/zema-cli/internal/message"
+	"github.com/ZeyuSi-2099/zema-cli/internal/session"
 )
 
 type agentTool struct {

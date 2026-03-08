@@ -4,7 +4,7 @@ import (
 	"github.com/charmbracelet/bubbles/key"
 	tea "github.com/charmbracelet/bubbletea"
 	"github.com/charmbracelet/lipgloss"
-	"github.com/opencode-ai/opencode/internal/tui/theme"
+	"github.com/ZeyuSi-2099/zema-cli/internal/tui/theme"
 )
 
 type Container interface {

@@ -4,11 +4,11 @@ import (
 	"github.com/charmbracelet/bubbles/key"
 	tea "github.com/charmbracelet/bubbletea"
 	"github.com/charmbracelet/lipgloss"
-	utilComponents "github.com/opencode-ai/opencode/internal/tui/components/util"
-	"github.com/opencode-ai/opencode/internal/tui/layout"
-	"github.com/opencode-ai/opencode/internal/tui/styles"
-	"github.com/opencode-ai/opencode/internal/tui/theme"
-	"github.com/opencode-ai/opencode/internal/tui/util"
+	utilComponents "github.com/ZeyuSi-2099/zema-cli/internal/tui/components/util"
+	"github.com/ZeyuSi-2099/zema-cli/internal/tui/layout"
+	"github.com/ZeyuSi-2099/zema-cli/internal/tui/styles"
+	"github.com/ZeyuSi-2099/zema-cli/internal/tui/theme"
+	"github.com/ZeyuSi-2099/zema-cli/internal/tui/util"
 )
 
 // Command represents a command that can be executed

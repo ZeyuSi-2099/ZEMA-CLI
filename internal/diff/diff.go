@@ -15,8 +15,8 @@ import (
 	"github.com/aymanbagabas/go-udiff"
 	"github.com/charmbracelet/lipgloss"
 	"github.com/charmbracelet/x/ansi"
-	"github.com/opencode-ai/opencode/internal/config"
-	"github.com/opencode-ai/opencode/internal/tui/theme"
+	"github.com/ZeyuSi-2099/zema-cli/internal/config"
+	"github.com/ZeyuSi-2099/zema-cli/internal/tui/theme"
 	"github.com/sergi/go-diff/diffmatchpatch"
 )
 
@@ -344,7 +344,7 @@ func SyntaxHighlight(w io.Writer, source, fileName, formatter string, bg lipglos
 
 	// Dynamic theme based on current theme values
 	syntaxThemeXml := fmt.Sprintf(`
-	<style name="opencode-theme">
+	<style name="zema-theme">
 	<!-- Base colors -->
 	<entry type="Background" style="bg:%s"/>
 	<entry type="Text" style="%s"/>

@@ -1,4 +1,4 @@
-module github.com/opencode-ai/opencode
+module github.com/ZeyuSi-2099/zema-cli
 
 go 1.24.0
 

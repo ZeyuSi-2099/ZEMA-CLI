@@ -6,12 +6,12 @@ import (
 
 	"github.com/charmbracelet/lipgloss"
 	"github.com/charmbracelet/x/ansi"
-	"github.com/opencode-ai/opencode/internal/config"
-	"github.com/opencode-ai/opencode/internal/message"
-	"github.com/opencode-ai/opencode/internal/session"
-	"github.com/opencode-ai/opencode/internal/tui/styles"
-	"github.com/opencode-ai/opencode/internal/tui/theme"
-	"github.com/opencode-ai/opencode/internal/version"
+	"github.com/ZeyuSi-2099/zema-cli/internal/config"
+	"github.com/ZeyuSi-2099/zema-cli/internal/message"
+	"github.com/ZeyuSi-2099/zema-cli/internal/session"
+	"github.com/ZeyuSi-2099/zema-cli/internal/tui/styles"
+	"github.com/ZeyuSi-2099/zema-cli/internal/tui/theme"
+	"github.com/ZeyuSi-2099/zema-cli/internal/version"
 )
 
 type SendMsg struct {
@@ -98,7 +98,7 @@ func lspsConfigured(width int) string {
 }
 
 func logo(width int) string {
-	logo := fmt.Sprintf("%s %s", styles.OpenCodeIcon, "OpenCode")
+	logo := fmt.Sprintf("%s %s", styles.ZemaIcon, "ZEMA")
 	t := theme.CurrentTheme()
 	baseStyle := styles.BaseStyle()
 
@@ -120,7 +120,7 @@ func logo(width int) string {
 }
 
 func repo(width int) string {
-	repo := "https://github.com/opencode-ai/opencode"
+	repo := "https://github.com/ZeyuSi-2099/zema-cli"
 	t := theme.CurrentTheme()
 
 	return styles.BaseStyle().

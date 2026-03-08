@@ -11,10 +11,10 @@ import (
 
 	"github.com/bmatcuk/doublestar/v4"
 	"github.com/fsnotify/fsnotify"
-	"github.com/opencode-ai/opencode/internal/config"
-	"github.com/opencode-ai/opencode/internal/logging"
-	"github.com/opencode-ai/opencode/internal/lsp"
-	"github.com/opencode-ai/opencode/internal/lsp/protocol"
+	"github.com/ZeyuSi-2099/zema-cli/internal/config"
+	"github.com/ZeyuSi-2099/zema-cli/internal/logging"
+	"github.com/ZeyuSi-2099/zema-cli/internal/lsp"
+	"github.com/ZeyuSi-2099/zema-cli/internal/lsp/protocol"
 )
 
 // WorkspaceWatcher manages LSP file watching

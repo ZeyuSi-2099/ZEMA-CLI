@@ -8,20 +8,20 @@ import (
 	"github.com/charmbracelet/bubbles/key"
 	tea "github.com/charmbracelet/bubbletea"
 	"github.com/charmbracelet/lipgloss"
-	"github.com/opencode-ai/opencode/internal/app"
-	"github.com/opencode-ai/opencode/internal/config"
-	"github.com/opencode-ai/opencode/internal/llm/agent"
-	"github.com/opencode-ai/opencode/internal/logging"
-	"github.com/opencode-ai/opencode/internal/permission"
-	"github.com/opencode-ai/opencode/internal/pubsub"
-	"github.com/opencode-ai/opencode/internal/session"
-	"github.com/opencode-ai/opencode/internal/tui/components/chat"
-	"github.com/opencode-ai/opencode/internal/tui/components/core"
-	"github.com/opencode-ai/opencode/internal/tui/components/dialog"
-	"github.com/opencode-ai/opencode/internal/tui/layout"
-	"github.com/opencode-ai/opencode/internal/tui/page"
-	"github.com/opencode-ai/opencode/internal/tui/theme"
-	"github.com/opencode-ai/opencode/internal/tui/util"
+	"github.com/ZeyuSi-2099/zema-cli/internal/app"
+	"github.com/ZeyuSi-2099/zema-cli/internal/config"
+	"github.com/ZeyuSi-2099/zema-cli/internal/llm/agent"
+	"github.com/ZeyuSi-2099/zema-cli/internal/logging"
+	"github.com/ZeyuSi-2099/zema-cli/internal/permission"
+	"github.com/ZeyuSi-2099/zema-cli/internal/pubsub"
+	"github.com/ZeyuSi-2099/zema-cli/internal/session"
+	"github.com/ZeyuSi-2099/zema-cli/internal/tui/components/chat"
+	"github.com/ZeyuSi-2099/zema-cli/internal/tui/components/core"
+	"github.com/ZeyuSi-2099/zema-cli/internal/tui/components/dialog"
+	"github.com/ZeyuSi-2099/zema-cli/internal/tui/layout"
+	"github.com/ZeyuSi-2099/zema-cli/internal/tui/page"
+	"github.com/ZeyuSi-2099/zema-cli/internal/tui/theme"
+	"github.com/ZeyuSi-2099/zema-cli/internal/tui/util"
 )
 
 type keyMap struct {
@@ -924,14 +924,14 @@ func New(app *app.App) tea.Model {
 	model.RegisterCommand(dialog.Command{
 		ID:          "init",
 		Title:       "Initialize Project",
-		Description: "Create/Update the OpenCode.md memory file",
+		Description: "Create/Update the ZEMA.md memory file",
 		Handler: func(cmd dialog.Command) tea.Cmd {
-			prompt := `Please analyze this codebase and create a OpenCode.md file containing:
+			prompt := `Please analyze this codebase and create a ZEMA.md file containing:
 1. Build/lint/test commands - especially for running a single test
 2. Code style guidelines including imports, formatting, types, naming conventions, error handling, etc.
 
 The file you create will be given to agentic coding agents (such as yourself) that operate in this repository. Make it about 20 lines long.
-If there's already a opencode.md, improve it.
+If there's already a zema.md, improve it.
 If there are Cursor rules (in .cursor/rules/ or .cursorrules) or Copilot rules (in .github/copilot-instructions.md), make sure to include them.`
 			return tea.Batch(
 				util.CmdHandler(chat.SendMsg{

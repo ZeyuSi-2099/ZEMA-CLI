@@ -4,7 +4,7 @@ import (
 	"context"
 	"os"
 
-	"github.com/opencode-ai/opencode/internal/logging"
+	"github.com/ZeyuSi-2099/zema-cli/internal/logging"
 	"google.golang.org/genai"
 )
 

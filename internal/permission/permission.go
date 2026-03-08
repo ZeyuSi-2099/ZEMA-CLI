@@ -7,8 +7,8 @@ import (
 	"sync"
 
 	"github.com/google/uuid"
-	"github.com/opencode-ai/opencode/internal/config"
-	"github.com/opencode-ai/opencode/internal/pubsub"
+	"github.com/ZeyuSi-2099/zema-cli/internal/config"
+	"github.com/ZeyuSi-2099/zema-cli/internal/pubsub"
 )
 
 var ErrorPermissionDenied = errors.New("permission denied")

@@ -9,17 +9,17 @@ import (
 	"sync"
 	"time"
 
-	"github.com/opencode-ai/opencode/internal/config"
-	"github.com/opencode-ai/opencode/internal/db"
-	"github.com/opencode-ai/opencode/internal/format"
-	"github.com/opencode-ai/opencode/internal/history"
-	"github.com/opencode-ai/opencode/internal/llm/agent"
-	"github.com/opencode-ai/opencode/internal/logging"
-	"github.com/opencode-ai/opencode/internal/lsp"
-	"github.com/opencode-ai/opencode/internal/message"
-	"github.com/opencode-ai/opencode/internal/permission"
-	"github.com/opencode-ai/opencode/internal/session"
-	"github.com/opencode-ai/opencode/internal/tui/theme"
+	"github.com/ZeyuSi-2099/zema-cli/internal/config"
+	"github.com/ZeyuSi-2099/zema-cli/internal/db"
+	"github.com/ZeyuSi-2099/zema-cli/internal/format"
+	"github.com/ZeyuSi-2099/zema-cli/internal/history"
+	"github.com/ZeyuSi-2099/zema-cli/internal/llm/agent"
+	"github.com/ZeyuSi-2099/zema-cli/internal/logging"
+	"github.com/ZeyuSi-2099/zema-cli/internal/lsp"
+	"github.com/ZeyuSi-2099/zema-cli/internal/message"
+	"github.com/ZeyuSi-2099/zema-cli/internal/permission"
+	"github.com/ZeyuSi-2099/zema-cli/internal/session"
+	"github.com/ZeyuSi-2099/zema-cli/internal/tui/theme"
 )
 
 type App struct {
