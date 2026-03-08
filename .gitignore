@@ -41,7 +41,11 @@ Thumbs.db
 .env
 .env.local
 
+.zema/
 .opencode/
 
+zema
+zema-*
 opencode
 opencode.md
+zema.md
